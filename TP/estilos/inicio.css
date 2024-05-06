@@ -1,0 +1,270 @@
+body {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
+    font-family: Arial, sans-serif; /* Fallback de fuente genérica */
+    background-color: #3C5D8B; /* Color de fondo */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical solo cuando sea necesario */
+}
+
+/*Lerr mas*/
+.leerMas{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+.leerMas:hover{
+    background-color: #0d0d0d;
+    color: brown;
+}
+
+
+/*Estilos para el nav*/
+.button{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 25px; /* Tamaño de fuente más pequeño */
+    height: 25px; /* Altura más pequeña */
+    width: 120px; /* Ancho más pequeño */
+    margin: 5px; /* Espacio entre los botones */
+    padding: 5px; /* Espaciado interno */
+    color: #fff;
+    background-color: #0d0d0d;
+    border: 1px solid #fff;
+    border-radius: 50px; /* Redondear los botones más */
+    box-shadow: 0px 2px 5px 0px #596873;
+    transition: all 0.3s;
+}
+
+/* Estilos para el header */
+.header-global {
+    position: fixed; /* Hace que el header sea fijo */
+    top: 0; /* Lo fija en la parte superior */
+    left: 0;
+    right: 0;
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Display flex para alinear elementos */
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+    align-items: center; /* Alineación vertical */
+    border-bottom: 2px solid #fff; /* Agrega un borde inferior */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+}
+
+.titulo {
+    margin: 0; /* Elimina el margen predeterminado */
+    margin-bottom: 20px; /* Agrega un margen inferior */
+}
+
+.navegacion {
+    display: flex; /* Utilizamos flexbox para los enlaces */
+    align-items: center; /* Centramos verticalmente los enlaces */
+    justify-content: center;
+}
+
+.navegacion ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.navegacion li {
+    margin-left: 20px; /* Añade un margen entre los elementos de la lista */
+}
+
+.navegacion a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.navegacion a:hover {
+    background-color: aqua; /* Color de fondo al pasar el mouse */
+}
+
+
+
+/*noticias*/
+
+main {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 0;
+    background-color: antiquewhite;
+  }
+  
+
+.article-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Mostrar dos columnas */
+        background-color: rgb(22, 22, 22);
+        color: white;
+        
+     }
+  
+  
+     .article-grid article {
+        border: 1px solid #ccc;
+        padding: 20px;
+      }
+  
+      .article-grid img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+      }
+
+/* Estilos para el contenido */
+.content {
+    margin-top: 100px; /* Margen superior para evitar que el contenido se superponga con el header */
+    margin-left: 20px; /* Margen izquierdo */
+    margin-bottom: 100px; /* Margen inferior para evitar que el contenido se superponga con el footer */
+    padding: 20px; /* Ajusta el espacio alrededor del contenido según sea necesario */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el footer */
+.footer {
+    position: fixed; /* Establece la posición fija */
+    bottom: 0; /* Lo fija en la parte inferior */
+    left: 0;
+    right: 0;
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alinea el contenido al centro */
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+}
+
+.container {
+    max-width: 1200px; /* Ajusta el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.footer h4,
+.footer h5 {
+    margin: 0; /* Elimina el margen predeterminado de los títulos */
+}
+
+.footer-redes ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Quita el relleno predeterminado de la lista */
+}
+
+.footer-redes ul li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    margin-right: 10px; /* Ajusta el espacio entre los elementos de la lista */
+}
+
+.footer-redes a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 24px; /* Tamaño de fuente */
+}
+
+.footer-redes a:hover {
+    color: #ccc; /* Cambia el color del texto al pasar el mouse sobre los enlaces */
+}
+
+/* Media query para celulares */
+
+@media screen and (max-width: 767px) {
+    
+
+    body{
+        overflow-y: auto;
+    }
+
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Mostrar dos columnas */
+        background-color: rgb(22, 22, 22);
+        color: white;
+        
+     }
+     main {
+        margin-top: 8rem;
+        margin-bottom: 20rem;
+        padding: 0;
+        background-color: antiquewhite;
+      }
+      
+
+    /*boton*/
+    .button {
+        text-decoration: none;
+        font-family: monospace;
+        font-size: 12.5px; /* Tamaño de fuente más pequeño */
+        height: 25px; /* Altura más pequeña */
+        width: 120px; /* Ancho más pequeño */
+        margin: 5px; /* Espacio entre los botones */
+        padding: 5px; /* Espaciado interno */
+        color: #fff;
+        background-color: #0d0d0d;
+        border: 1px solid #fff;
+        border-radius: 50px; /* Redondear los botones más */
+        box-shadow: 0px 2px 5px 0px #596873;
+        transition: all 0.3s;
+    }
+
+    /*header*/
+    /* Media query para dispositivos móviles */
+    .header-global {
+        padding: 10px; /* Reducir el espacio interno del encabezado */
+        flex-direction: column; /* Cambiar a disposición vertical */
+        align-items: center; /* Centrar elementos horizontalmente */
+    }
+
+    .titulo {
+        margin-bottom: 10px; /* Espaciado entre el título y la navegación */
+    }
+
+    .navigation {
+        margin-top: 10px; /* Reducir el espacio entre el título y la navegación */
+    }
+
+    /*footer*/
+    .footer {
+        padding: 50px 0; /* Reducir el espacio interno del pie de página */
+    }
+
+    .footer-row {
+        flex-direction: column; /* Apilar los elementos del pie de página verticalmente */
+    }
+
+    .footer-redes {
+        width: 100%; /* Ajustar el ancho de los elementos del pie de página al 100% */
+        padding: 0; /* Eliminar el relleno */
+    }
+
+    .footer-redes h4 {
+        margin-bottom: 15px; /* Reducir el espacio entre los títulos */
+        font-size: 24px; /* Aumentar el tamaño del texto */
+    }
+
+    .footer-redes ul li a {
+        margin-bottom: 10px; /* Reducir el espacio entre los enlaces */
+        font-size: 16px; /* Aumentar el tamaño del texto */
+    }
+}

@@ -1,0 +1,8 @@
+body {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
+    font-family: Arial, sans-serif; /* Fallback de fuente genérica */
+    background-color: #3C5D8B; /* Color de fondo */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical solo cuando sea necesario */
+}
+

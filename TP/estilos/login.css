@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #3C5D8B;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; 
+}
+
+.formulario {
+    background-color: rgb(119, 119, 119); /* Solo para visualizar el contenedor */
+    padding: 30px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    max-width: 400px; /* Ancho máximo para el formulario */
+}
+
+.formulario h1 {
+    font-size: 2rem;
+    margin: 0; /* Eliminar el margen 
+    predeterminado */
+}
+
+.formulario form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"],
+.formulario input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario input[type="submit"] {
+    background-color: #3C5D8B;
+    color: white;
+    cursor: pointer;
+}
+
+.recordar {
+    font-size: 1rem;
+
+}
+
+.registrarse a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #3C5D8B;
+    transition: all .10s ease;
+}
+
+
+.contraseña{
+    padding: 1px;
+}
+
+.boton {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px; 
+    color: #fff;
+    background-color: #0d0d0d;
+    border: 1px solid #fff;
+    box-shadow: 0px 2.5px 5.7px 0px #596873;
+    transition: all 0.3s;
+}
+.boton:hover{
+    background-color: rgb(149, 149, 149);
+}
+
+
+.registrarse:hover{
+    background-color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .formulario h1 {
+        font-size: 1.5rem;
+        margin: 0; /* Eliminar el margen 
+        predeterminado */
+    }
+
+    .recordar {
+        font-size: 0.8rem;
+    
+    }
+
+    .registrarse a {
+        text-decoration: none;
+        color: #3C5D8B;
+    }
+
+}

@@ -1,8 +1,115 @@
+/* Estilos generales */
 body {
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina rellenos predeterminados */
-    font-family: Arial, sans-serif; /* Fallback de fuente genérica */
-    background-color: #3C5D8B; /* Color de fondo */
-    overflow-y: auto; /* Agrega una barra de desplazamiento vertical solo cuando sea necesario */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #659AA6;
+    color: #333;
 }
 
+/* Estilos para el header */
+.general-header {
+    background-color: #030303;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #444;
+}
+
+.general-header h1 {
+    margin: 0;
+}
+
+.navegador {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+.navegador .button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #444;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.navegador .button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el main y artículos */
+main {
+    padding: 20px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos individuales para cada artículo */
+.articulo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.articulo:hover {
+    transform: scale(1.02);
+}
+
+.articulo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.articulo h2 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.articulo p {
+    font-size: 1em;
+    color: #666;
+}
+
+.leerMas {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.leerMas:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 767px) {
+
+    .navegador .button {
+        text-decoration: none;
+        color: #fff;
+        background-color: #444;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navegador .button:hover {
+        background-color: #555;
+    }
+
+}

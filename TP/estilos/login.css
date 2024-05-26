@@ -10,6 +10,35 @@ body {
     overflow-y: auto; 
 }
 
+
+.header-global {
+    position: fixed; 
+    font-size: 1rem;
+    top: 0; 
+    left: 0;
+    right: 0;
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    display: flex; 
+    justify-content: left;  
+    border-bottom: 2px solid #fff; 
+    width: 100%; 
+    z-index: 1000; 
+    flex-direction: column; 
+}
+
+
+.button{
+    text-decoration: none;
+    color: #fff;
+    background-color: #444;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
 .formulario {
     background-color: rgb(119, 119, 119); /* Solo para visualizar el contenedor */
     padding: 30px;

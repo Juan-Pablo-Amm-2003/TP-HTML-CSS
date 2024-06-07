@@ -9,6 +9,7 @@
     --footer-text-color: #fff;
 }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -17,19 +18,49 @@ body {
     overflow-y: auto;
 }
 
-/* Leer más */
-.leerMas {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem;
-    color: #ccc;
+/*header*/
+.header-global{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-dark-color);
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1rem solid var(--text-color);
+
+    width: 100%;
+    z-index: 1000;
+    flex-direction: column;
 }
 
-.leerMas:hover {
-    background-color: #0d0d0d;
-    color: brown;
+.titulo {
+    margin: 1rem;
+    margin-bottom: 20px;
 }
 
-/* Estilos para el nav */
+
+
+/*nav*/
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Para distribuir equitativamente */
+}
+.navegacion ul li {
+    flex-grow: 1; /* Para que cada elemento ocupe el espacio disponible */
+}
+
+/*nav botones*/
 .button {
     text-decoration: none;
     color: var(--text-color);
@@ -44,81 +75,33 @@ body {
     background-color: var(--accent-color);
 }
 
-/* Estilos para el header */
-.header-global {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--bg-dark-color);
-    color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid var(--text-color);
-    width: 100%;
-    z-index: 1000;
-    flex-direction: column;
-}
+/*cuerpo de la noticia*/
 
-.titulo {
-    margin: 1rem;
-    margin-bottom: 20px;
-}
-
-.navegacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-}
-
-.navegacion ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navegacion li {
-    margin-left: 20px;
-}
-
-/* Noticias */
 main {
-    margin: 10rem 0;
+    margin-top: 12rem;
     padding: 0;
     background-color: antiquewhite;
+    margin-bottom: 150px; /* Ajusta este valor según la altura de tu footer */
 }
 
 .article-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(22, 22, 22);
-    color: white;
-    font-size: 1rem;
-}
-
-.contendor-imagenes{
-    max-width: 70%;
-    border-radius: 1%;
-}
-
-.article-grid article {
-    border: 1px solid var(--border-color);
-    padding: 20px;
+    display: flex; /* Utiliza flexbox para controlar la disposición de los elementos */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
 }
 
 .article-grid img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+    max-width: 50%; /* La imagen ocupa el 50% del contenedor */
+    margin-right: 20px; /* Añade un margen a la derecha para separar la imagen del texto */
+    margin-right: 2.5rem;
 }
 
-/* Estilos para el contenido */
-.content {
-    margin: 100px 20px;
-    padding: 20px;
+.probando {
+    flex: 1; /* Hace que el texto ocupe todo el espacio restante */
 }
+.probando{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 2rem;
+ }
 
 /* Estilos para el footer */
 .footer {
@@ -131,6 +114,7 @@ main {
     padding: 20px;
     text-align: center;
     z-index: 1000;
+ 
 }
 
 .container {
@@ -149,11 +133,6 @@ main {
     margin: 0;
 }
 
-.footer-redes ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
 .footer-redes a {
     color: var(--footer-text-color);
     text-decoration: none;
@@ -164,19 +143,35 @@ main {
     color: #ccc;
 }
 
+
+
 @media screen and (max-width: 767px) {
-    .article-grid {
-        grid-template-columns: 1fr;
-    }
+
 
     main {
         margin: 8rem 0;
         padding: 0;
         background-color: antiquewhite;
+        margin-top: 15rem;
+        margin-bottom: 10rem;
     }
 
 
-
+  
+.article-grid {
+     flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        }
+    
+.article-grid img {
+     max-width: 100%; /* La imagen ocupa todo el ancho disponible */
+     margin-bottom: 20px; /* Añade un margen inferior para separar la imagen del texto */
+        }
+    
+ .probando {
+    font-size: 1rem; /* Reduce el tamaño de fuente para pantallas más pequeñas */
+        }
+ 
+    
     .titulo {
         margin-bottom: 5px;
     }
@@ -190,13 +185,14 @@ main {
     }
 
     .navegacion a {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 2px 5px;
         margin-bottom: 5px; /* Agregar margen inferior */
     }
 
     .footer {
         padding: 10px 0;
+        margin-top: 25rem;
     }
 
     .footer-row {

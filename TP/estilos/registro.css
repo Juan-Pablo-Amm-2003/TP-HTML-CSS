@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    margin-bottom: 0; /* Eliminar el margen inferior del body */
     font-family: monospace;
     background-color: #3C5D8B;
     height: 100vh;
@@ -105,26 +106,28 @@ body {
     background-color: rgb(149, 149, 149);
 }
 
+
 @media screen and (max-width: 767px) {
+    .header-global {
+        padding: 10px; /* Reducir el espacio interno */
+        font-size: 0.8rem; /* Reducir el tamaño de la fuente */
+        height: auto; /* Cambiar la altura para adaptarse al contenido */
+        align-items: center; /* Centrar verticalmente los elementos */
+    }
+
     .button {
-        padding: 8px 12px; /* Ajuste de tamaño para pantallas pequeñas */
-        margin: 3px; /* Ajuste de margen para pantallas pequeñas */
+        padding: 6px 10px; /* Ajustar el tamaño del botón */
+        margin: 3px; /* Ajustar el margen del botón */
+    }
+
+    .formulario {
+        padding: 0; /* Eliminar el espacio interno del formulario */
+        margin: 0; /* Eliminar el margen del formulario */
+        margin-bottom: 0; /* Eliminar el margen inferior del formulario */
     }
 
     .formulario h1 {
-        font-size: 1.5rem;
-        margin: 0; /* Eliminar el margen 
-        predeterminado */
+        font-size: 1.5rem; /* Reducir el tamaño del título del formulario */
+        margin-bottom: 15px; /* Ajustar el margen inferior del título */
     }
-
-    .recordar {
-        font-size: 0.8rem;
-    
-    }
-
-    .registrarse a {
-        text-decoration: none;
-        color: #3C5D8B;
-    }
-
 }

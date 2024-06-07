@@ -123,6 +123,17 @@ body {
     
     }
 
+    .header-global {
+        padding: 10px; /* Reducir el espacio interno */
+        font-size: 0.8rem; /* Reducir el tamaño de la fuente */
+        height: auto; /* Cambiar la altura para adaptarse al contenido */
+    }
+
+    .button {
+        padding: 8px 12px; /* Ajustar el tamaño del botón */
+        margin: 3px; /* Ajustar el margen del botón */
+    }
+
     .registrarse a {
         text-decoration: none;
         color: #3C5D8B;

@@ -148,14 +148,21 @@ font-size: 2rem;
 @media screen and (max-width: 767px) {
 
 
-    main {
-        margin: 8rem 0;
-        padding: 0;
-        background-color: antiquewhite;
-        margin-top: 15rem;
-        margin-bottom: 10rem;
-    }
+main {
+    margin: 8rem 0;
+    padding: 0;
+    background-color: antiquewhite;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+}
 
+h1{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.8rem;
+}
 
   
 .article-grid {
@@ -164,7 +171,7 @@ font-size: 2rem;
     
 .article-grid img {
      max-width: 100%; /* La imagen ocupa todo el ancho disponible */
-     margin-bottom: 20px; /* Añade un margen inferior para separar la imagen del texto */
+     margin: 20px; /* Añade un margen inferior para separar la imagen del texto */
         }
     
  .probando {

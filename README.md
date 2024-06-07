@@ -1,6 +1,6 @@
 Trabajo Práctico de Desarrollo Web con HTML y CSS
 Este repositorio contiene un trabajo práctico realizado como parte de la diplomatura "Desarrollo Web Full Stack" en ICARO,
-utilizando HTML y CSS para crear una página web de viajes llamada Bitácora Creativa.
+utilizando HTML y CSS para crear una página web de noticias llamada Bitácora Creativa.
 Autor: Juan Pablo Ammiraglia
 
 Descripción
